@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeler — Ömer Ali Bayrakçı</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">omer<span style="color:var(--accent2)">.</span>dev</a>
+  <div class="nav-links">
+    <a href="index.html">Anasayfa</a>
+    <a href="hakkimda.html">Hakkimda</a>
+    <a href="beceriler.html">Beceriler</a>
+    <a href="sertifikalar.html">Sertifikalar</a>
+    <a href="projeler.html">Projeler</a>
+    <a href="iletisim.html">Iletisim</a>
+  </div>
+  <div class="hamburger" role="button" tabindex="0"><span></span><span></span><span></span></div>
+</nav>
+
+<main>
+  <section class="page-section">
+    <p class="section-label">Calismalarim</p>
+    <h1 class="section-title">Projeler</h1>
+    <p class="section-sub">Gelistirdigim acik kaynak ve kurumsal projelerden bir secki.</p>
+
+    <!-- Filter tags -->
+    <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:3rem;" id="filters">
+      <span class="tag active" data-filter="all">Tumu</span>
+      <span class="tag" data-filter="fullstack">Full Stack</span>
+      <span class="tag" data-filter="frontend">Frontend</span>
+      <span class="tag" data-filter="backend">Backend</span>
+      <span class="tag" data-filter="ai">AI / ML</span>
+    </div>
+
+    <div class="projects-grid" id="projects-grid">
+
+      <div class="project-card fade-up" data-category="fullstack">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-thumb-label"><img src="images/marketplace.png" alt=""></span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">HTML, CSS, JavaScript</span>
+            <span class="tag">Node.js, Express</span>
+            <span class="tag">REST API</span>
+            <span class="tag">Caching (in-memory)</span>
+            <span class="tag"> Data scraping</span>
+          </div>
+          <h3 class="project-title">CS2 Skin Marketplace (Full Stack Project)</h3>
+          <p class="project-desc">
+            Steam Market’ten CS2 skinlerini çekip listeleyen full-stack bir web uygulaması geliştirdim. 
+            Backend’de Node.js & Express ile veri çekme, filtreleme ve cache sistemi kurdum.  
+            Frontend’de Vanilla JavaScript ile hızlı ve kullanıcı dostu bir arayüz oluşturdum.
+            Gerçek zamanlı arama, fiyat filtreleme, sıralama ve Steam’e yönlendirme özellikleri içerir.
+          </p>
+          <p>
+            Bu projede ücretli API kullanmadan, tamamen ücretsiz kaynaklarla veri çekme ve işleme sistemi kurdum.
+          </p>
+          <div class="project-links">
+            <a href="https://cs2-market-frontend.vercel.app/" class="project-link">Canli Goster</a>
+            <a href="https://github.com/1337om3r/cs2-market-backend" class="project-link gh">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-up" data-category="ai">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-thumb-label"><img src="images/projebanner-nexsearch.png" alt=""></span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+          <h3 class="project-title">NexSearch – Modern Web Proxy Platformu</h3>
+          <p class="project-desc">
+            NexSearch, kullanıcıların tarayıcı üzerinden URL girerek web sitelerine proxy aracılığıyla erişmesini sağlayan full-stack bir web uygulamasıdır.
+            Backend tarafında Node.js & Express kullanılarak istek yönlendirme, veri çekme ve loglama sistemi geliştirilmiştir.
+            Frontend tarafında Vanilla JavaScript ile hızlı ve kullanıcı dostu bir arayüz oluşturulmuştur.
+            Uygulama; URL yönlendirme, proxy üzerinden içerik çekme, dinamik sayfa render etme ve gerçek zamanlı erişim özellikleri sunar. Ağ kısıtlamalarını aşmaya yönelik hafif ve pratik bir çözüm sağlar.
+          </p>
+          <div class="project-links">
+            <a href="https://nex-search-frontend.vercel.app/" class="project-link">Canli Goster</a>
+            <a href="https://github.com/1337om3r/nex-search-backend" class="project-link gh">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-up" data-category="ai">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-thumb-label"><img src="images/random_psw.png" alt=""></span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Python</span>
+
+          </div>
+          <h3 class="project-title">Modern Password Generator Platformu</h3>
+          <p class="project-desc">
+            Güvenli, hızlı ve modern bir terminal tabanlı şifre üretim aracı.
+            Bu proje, Python ile geliştirilmiş gelişmiş bir rastgele şifre oluşturucu sistemidir.
+            Kriptografik güvenlik odaklı çalışan yapı sayesinde güçlü ve tahmin edilmesi zor şifreler üretir.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/1337om3r/random-psw" class="project-link">Canli Goster</a>
+            <a href="https://github.com/1337om3r/random-psw" class="project-link gh">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-up" data-category="ai">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-thumb-label"><img src="images/ximage.png" alt=""></span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Text</span>
+
+          </div>
+          <h3 class="project-title">xAI Imagine (image API playground) Sınırsız Sansürsüz Kullanım Açığı</h3>
+          <p class="project-desc">
+            xAI’nin “Imagine” adlı görsel üretim arayüzünü (image API playground) denedim. Bu ortamda text-to-image modeli üzerinden prompt girerek görsel üretimi yapılabiliyor.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/1337om3r/xai-imagine-notes" class="project-link">Canli Goster</a>
+            <a href="https://github.com/1337om3r/xai-imagine-notes" class="project-link gh">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-up" data-category="chat">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-thumb-label"><img src="images/nexchat.png" alt=""></span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Text</span>
+
+          </div>
+          <h3 class="project-title">NexChat - AI Sohbet Uygulaması</h3>
+          <p class="project-desc">
+            Gelişmiş bir yapay zeka sohbet uygulaması. Natural Language Processing (NLP) teknolojisiyle entegre edilmiş, kullanıcı dostu bir arayüz sunar.
+          </p>
+          <div class="project-links">
+            <a href="https://nex-chat-4gqo.onrender.com/" class="project-link">Canli Goster</a>
+            <a href="https://github.com/1337om3r/nexchat" class="project-link gh">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <span class="footer-copy">2026 <span>Ömer Ali Bayrakçı</span> — Tüm Haklar Saklıdır.</span>
+  <div class="footer-socials">
+    <a href="https://github.com/1337om3r" class="footer-social-link" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+      </svg>
+    </a>
+    <a href="https://www.linkedin.com/in/%C3%B6mer-bayrak%C3%A7%C4%B1-4884a73b1/" class="footer-social-link" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+      </svg>
+    </a>
+    <a href="mailto:omeralibayrakcii@gmail.com" class="footer-social-link" aria-label="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+      </svg>
+    </a>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+<script>
+  // Project category filter
+  const filters = document.querySelectorAll('#filters .tag');
+  const cards   = document.querySelectorAll('#projects-grid .project-card');
+
+  filters.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filters.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.dataset.filter;
+      cards.forEach(card => {
+        const show = filter === 'all' || card.dataset.category === filter;
+        card.style.display = show ? 'flex' : 'none';
+      });
+    });
+  });
+</script>
+</body>
+</html>
