@@ -7,7 +7,7 @@ Site; projelerimi, sertifikalarımı ve iletişim bilgilerimi modern ve kullanı
 
 ## 🚀 Canlı Site
 
-👉 https://1337om3r.github.io/
+👉 https://omerbayrakci.vercel.app
 
 ---
 
