@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
@@ -12,28 +12,29 @@
   <a href="index.html" class="nav-logo">omer<span style="color:var(--accent2)">.</span>dev</a>
   <div class="nav-links">
     <a href="index.html">Anasayfa</a>
-    <a href="hakkimda.html">Hakkimda</a>
+    <a href="hakkimda.html">Hakkımda</a>
     <a href="beceriler.html">Beceriler</a>
     <a href="sertifikalar.html">Sertifikalar</a>
     <a href="projeler.html">Projeler</a>
-    <a href="iletisim.html">Iletisim</a>
+    <a href="iletisim.html">İletişim</a>
   </div>
   <div class="hamburger" role="button" tabindex="0"><span></span><span></span><span></span></div>
 </nav>
 
 <main>
   <section class="page-section">
-    <p class="section-label">Calismalarim</p>
+    <p class="section-label">Çalışmalarım</p>
     <h1 class="section-title">Projeler</h1>
-    <p class="section-sub">Gelistirdigim acik kaynak ve kurumsal projelerden bir secki.</p>
+    <p class="section-sub">Geliştirdiğim web, Python ve araştırma odaklı projelerden bir seçki.</p>
 
     <!-- Filter tags -->
     <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:3rem;" id="filters">
-      <span class="tag active" data-filter="all">Tumu</span>
+      <span class="tag active" data-filter="all">Tümü</span>
       <span class="tag" data-filter="fullstack">Full Stack</span>
       <span class="tag" data-filter="frontend">Frontend</span>
       <span class="tag" data-filter="backend">Backend</span>
-      <span class="tag" data-filter="ai">AI / ML</span>
+      <span class="tag" data-filter="cli">Python / CLI</span>
+      <span class="tag" data-filter="ai">AI / Notlar</span>
     </div>
 
     <div class="projects-grid" id="projects-grid">
@@ -62,13 +63,13 @@
             Bu projede ücretli API kullanmadan, tamamen ücretsiz kaynaklarla veri çekme ve işleme sistemi kurdum.
           </p>
           <div class="project-links">
-            <a href="https://cs2-market-frontend.vercel.app/" class="project-link">Canli Goster</a>
+            <a href="https://cs2-market-frontend.vercel.app/" class="project-link">Canlı Göster</a>
             <a href="https://github.com/1337om3r/cs2-market-backend" class="project-link gh">GitHub</a>
           </div>
         </div>
       </div>
 
-      <div class="project-card fade-up" data-category="ai">
+      <div class="project-card fade-up" data-category="fullstack">
         <div class="project-thumb">
           <div class="project-thumb-pattern"></div>
           <span class="project-thumb-label"><img src="images/projebanner-nexsearch.png" alt=""></span>
@@ -89,13 +90,13 @@
             Uygulama; URL yönlendirme, proxy üzerinden içerik çekme, dinamik sayfa render etme ve gerçek zamanlı erişim özellikleri sunar. Ağ kısıtlamalarını aşmaya yönelik hafif ve pratik bir çözüm sağlar.
           </p>
           <div class="project-links">
-            <a href="https://nex-search-frontend.vercel.app/" class="project-link">Canli Goster</a>
+            <a href="https://nex-search-frontend.vercel.app/" class="project-link">Canlı Göster</a>
             <a href="https://github.com/1337om3r/nex-search-backend" class="project-link gh">GitHub</a>
           </div>
         </div>
       </div>
 
-      <div class="project-card fade-up" data-category="ai">
+      <div class="project-card fade-up" data-category="cli">
         <div class="project-thumb">
           <div class="project-thumb-pattern"></div>
           <span class="project-thumb-label"><img src="images/random_psw.png" alt=""></span>
@@ -112,7 +113,7 @@
             Kriptografik güvenlik odaklı çalışan yapı sayesinde güçlü ve tahmin edilmesi zor şifreler üretir.
           </p>
           <div class="project-links">
-            <a href="https://github.com/1337om3r/random-psw" class="project-link">Canli Goster</a>
+            <a href="https://github.com/1337om3r/random-psw" class="project-link">Kaynak Kod</a>
             <a href="https://github.com/1337om3r/random-psw" class="project-link gh">GitHub</a>
           </div>
         </div>
@@ -133,29 +134,58 @@
             xAI’nin “Imagine” adlı görsel üretim arayüzünü (image API playground) denedim. Bu ortamda text-to-image modeli üzerinden prompt girerek görsel üretimi yapılabiliyor.
           </p>
           <div class="project-links">
-            <a href="https://github.com/1337om3r/xai-imagine-notes" class="project-link">Canli Goster</a>
+            <a href="https://github.com/1337om3r/xai-imagine-notes" class="project-link">Notları Gör</a>
             <a href="https://github.com/1337om3r/xai-imagine-notes" class="project-link gh">GitHub</a>
           </div>
         </div>
       </div>
 
-      <div class="project-card fade-up" data-category="chat">
+      <div class="project-card fade-up" data-category="fullstack">
         <div class="project-thumb">
           <div class="project-thumb-pattern"></div>
-          <span class="project-thumb-label"><img src="images/nexchat.png" alt=""></span>
+          <span class="project-thumb-label"><img src="images/nexchat.png" alt="NexChat arayüz görseli"></span>
         </div>
         <div class="project-body">
           <div class="project-tags">
-            <span class="tag">Text</span>
-
+            <span class="tag">Node.js</span>
+            <span class="tag">WebSocket</span>
+            <span class="tag">Gerçek Zamanlı</span>
+            <span class="tag">Chat</span>
           </div>
-          <h3 class="project-title">NexChat - AI Sohbet Uygulaması</h3>
+          <h3 class="project-title">NexChat – Gerçek Zamanlı Sohbet Uygulaması</h3>
           <p class="project-desc">
-            Gelişmiş bir yapay zeka sohbet uygulaması. Natural Language Processing (NLP) teknolojisiyle entegre edilmiş, kullanıcı dostu bir arayüz sunar.
+            NexChat, WebSocket tabanlı gerçek zamanlı mesajlaşma deneyimi sunan sade ve hızlı bir sohbet uygulamasıdır.
+            Kullanıcı listesi, sohbet odaları, modern arayüz ve GIF paylaşımı gibi özelliklerle küçük gruplar ve test ortamları için tasarlanmıştır.
           </p>
           <div class="project-links">
-            <a href="https://nex-chat-4gqo.onrender.com/" class="project-link">Canli Goster</a>
-            <a href="https://github.com/1337om3r/nexchat" class="project-link gh">GitHub</a>
+            <a href="https://nex-chat-4gqo.onrender.com/" class="project-link">Canlı Göster</a>
+            <a href="https://github.com/1337om3r/nex-chat" class="project-link gh">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card fade-up" data-category="cli">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-thumb-label project-thumb-code">
+            <strong>Bumper</strong>
+            <small>Python CLI</small>
+          </span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">CLI</span>
+            <span class="tag">Requests</span>
+            <span class="tag">Araştırma</span>
+          </div>
+          <h3 class="project-title">Bumper – Discord Mesaj Araştırma Aracı</h3>
+          <p class="project-desc">
+            Bumper, Discord mesaj akışlarını ve API davranışlarını incelemek için hazırlanmış Python tabanlı bir komut satırı aracıdır.
+            Proje; yapılandırma okuma, istek gönderme, içerik dosyasından sıralı işlem yürütme ve terminal üzerinden komut yönetimi gibi konulara odaklanır.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/1337om3r/Bumper" class="project-link gh">GitHub</a>
           </div>
         </div>
       </div>
@@ -205,3 +235,4 @@
 </script>
 </body>
 </html>
+

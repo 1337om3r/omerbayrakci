@@ -5,7 +5,9 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   /* ── EmailJS INIT ───────────────────────────────────────── */
-  emailjs.init("ZoFZsfn0Noii4ja_q");
+  if (window.emailjs) {
+    emailjs.init("ZoFZsfn0Noii4ja_q");
+  }
 
   /* ── Active nav link ──────────────────────────────────────── */
   const currentPage = location.pathname.split('/').pop() || 'index.html';
@@ -95,8 +97,13 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', function(e) {
       e.preventDefault();
 
+      if (!window.emailjs) {
+        alert("Mail servisi yüklenemedi. Lütfen doğrudan e-posta ile iletişime geçin.");
+        return;
+      }
+
       const btn = form.querySelector('button[type="submit"]');
-      btn.textContent = 'Gonderiliyor...';
+      btn.textContent = 'Gönderiliyor...';
       btn.disabled = true;
 
       emailjs.send("service_e2as6hn", "template_18h3pai", {
