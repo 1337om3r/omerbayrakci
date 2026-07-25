@@ -25,24 +25,99 @@
   <section class="page-section">
     <p class="section-label">Çalışmalarım</p>
     <h1 class="section-title">Projeler</h1>
-    <p class="section-sub">Geliştirdiğim web, Python ve araştırma odaklı projelerden bir seçki.</p>
+    <p class="section-sub">Geliştirdiğim siber güvenlik, ağ analizi, otomasyon ve web odaklı projelerim.</p>
 
     <!-- Filter tags -->
     <div style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:3rem;" id="filters">
       <span class="tag active" data-filter="all">Tümü</span>
+      <span class="tag" data-filter="security">Siber Güvenlik & OSINT</span>
       <span class="tag" data-filter="fullstack">Full Stack</span>
-      <span class="tag" data-filter="frontend">Frontend</span>
-      <span class="tag" data-filter="backend">Backend</span>
       <span class="tag" data-filter="cli">Python / CLI</span>
       <span class="tag" data-filter="ai">AI / Notlar</span>
     </div>
 
     <div class="projects-grid" id="projects-grid">
 
+      <!-- 1. NEX-OSINT -->
+      <div class="project-card fade-up" data-category="security">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-thumb-label"><img src="images/nex-osint.png" alt="NEX-OSINT Showcase"></span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">SOC Intelligence</span>
+            <span class="tag">OSINT Recon</span>
+            <span class="tag">Glassmorphism UI</span>
+            <span class="tag">Vercel Serverless</span>
+          </div>
+          <h3 class="project-title">NEX-OSINT v3 – Siber Güvenlik & Tehdit İstihbarat Platformu</h3>
+          <p class="project-desc">
+            IP Geolocation, Tehdit Risk Skoru Göstergesi, DNS Kayıt Çözümleme (A, MX, TXT, NS), Açık Port Taraması ve 30+ Platformlu Kullanıcı Adı / Dijital Ayak İzi (Username OSINT) araştırması sunan All-in-One siber güvenlik platformu.
+          </p>
+          <div class="project-links">
+            <a href="https://nex-osint.vercel.app/" target="_blank" class="project-link">Canlı Göster</a>
+            <a href="https://github.com/1337om3r/nex-osint" target="_blank" class="project-link gh">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2. BUMPER -->
       <div class="project-card fade-up" data-category="cli">
         <div class="project-thumb">
           <div class="project-thumb-pattern"></div>
-          <span class="project-thumb-label"><img src="images/nex-analyzer.png" alt="NEX-ANALYZER"></span>
+          <span class="project-thumb-label"><img src="images/bumper.png" alt="BUMPER Showcase"></span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Discord Glassmorphism UI</span>
+            <span class="tag">SSE Real-time Stream</span>
+            <span class="tag">Token Management</span>
+            <span class="tag">Vercel</span>
+          </div>
+          <h3 class="project-title">BUMPER – Discord Otomatik Sunucu Öne Çıkarıcı</h3>
+          <p class="project-desc">
+            Discord sunucularını ve kanallarını dairesel geri sayım sayacı, canlı aktivite günlükleri ve maskeli token yönetim paneli ile otomatik olarak öne çıkaran (/bump) otomasyon ve topluluk yönetim platformu.
+          </p>
+          <div class="project-links">
+            <a href="https://bumper-nu.vercel.app/" target="_blank" class="project-link">Canlı Göster</a>
+            <a href="https://github.com/1337om3r/bumper" target="_blank" class="project-link gh">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. RANDOM-PSW -->
+      <div class="project-card fade-up" data-category="security">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-thumb-label"><img src="images/random-psw.png" alt="RANDOM-PSW Showcase"></span>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Secrets Cryptography</span>
+            <span class="tag">Entropi Ölçer</span>
+            <span class="tag">Glassmorphism UI</span>
+            <span class="tag">Vercel</span>
+          </div>
+          <h3 class="project-title">RANDOM-PSW – Kriptografik Şifre Üretici & Güvenlik Kasası</h3>
+          <p class="project-desc">
+            Python secrets altyapısı ile kriptografik olarak kırılması imkânsız şifreler üreten, Bit Entropisi (log2(pool^L)) ve tahmini kırılma süresi ölçen, özelleştirilebilir slider/toggle seçenekli web platformu.
+          </p>
+          <div class="project-links">
+            <a href="https://random-psw.vercel.app/" target="_blank" class="project-link">Canlı Göster</a>
+            <a href="https://github.com/1337om3r/random-psw" target="_blank" class="project-link gh">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. NEX-ANALYZER -->
+      <div class="project-card fade-up" data-category="security">
+        <div class="project-thumb">
+          <div class="project-thumb-pattern"></div>
+          <span class="project-thumb-label"><img src="images/nex-analyzer.png" alt="NEX-ANALYZER Showcase"></span>
         </div>
         <div class="project-body">
           <div class="project-tags">
@@ -55,162 +130,79 @@
           <h3 class="project-title">NEX-ANALYZER – Canlı Ağ Trafiği & Tehdit Detektörü</h3>
           <p class="project-desc">
             NEX-ANALYZER, canlı ağ paketlerini yakalayan, TCP/UDP/DNS/HTTP/ICMP protokol çözümlemesi yapan ve SYN Flood ile şüpheli port anormalliklerini tespit eden modüler bir Python ve Web GUI platformudur.
-            Hem gelişmiş terminal (Rich CLI) dashboard'u hem de herkesin kolayca anlayabileceği Türkçe Akıllı Ağ Sağlık Danışmanı içeren Glassmorphic Koyu Tema arayüzü sunar.
           </p>
           <div class="project-links">
-            <a href="https://nex-analyzer.vercel.app/" class="project-link">Canlı Göster</a>
-            <a href="https://github.com/1337om3r/nex-analyzer" class="project-link gh">GitHub</a>
+            <a href="https://nex-analyzer.vercel.app/" target="_blank" class="project-link">Canlı Göster</a>
+            <a href="https://github.com/1337om3r/nex-analyzer" target="_blank" class="project-link gh">GitHub</a>
           </div>
         </div>
       </div>
 
+      <!-- 5. CS2 Skin Marketplace -->
       <div class="project-card fade-up" data-category="fullstack">
         <div class="project-thumb">
           <div class="project-thumb-pattern"></div>
-          <span class="project-thumb-label"><img src="images/marketplace.png" alt=""></span>
+          <span class="project-thumb-label"><img src="images/marketplace.png" alt="CS2 Marketplace Showcase"></span>
         </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="tag">HTML, CSS, JavaScript</span>
             <span class="tag">Node.js, Express</span>
             <span class="tag">REST API</span>
-            <span class="tag">Caching (in-memory)</span>
-            <span class="tag"> Data scraping</span>
           </div>
           <h3 class="project-title">CS2 Skin Marketplace (Full Stack Project)</h3>
           <p class="project-desc">
-            Steam Market’ten CS2 skinlerini çekip listeleyen full-stack bir web uygulaması geliştirdim. 
-            Backend’de Node.js & Express ile veri çekme, filtreleme ve cache sistemi kurdum.  
-            Frontend’de Vanilla JavaScript ile hızlı ve kullanıcı dostu bir arayüz oluşturdum.
-            Gerçek zamanlı arama, fiyat filtreleme, sıralama ve Steam’e yönlendirme özellikleri içerir.
-          </p>
-          <p>
-            Bu projede ücretli API kullanmadan, tamamen ücretsiz kaynaklarla veri çekme ve işleme sistemi kurdum.
+            Steam Market’ten CS2 skinlerini çekip listeleyen full-stack bir web uygulaması. Node.js & Express ile veri çekme, filtreleme ve in-memory cache sistemi kurulmuştur.
           </p>
           <div class="project-links">
-            <a href="https://cs2-market-frontend.vercel.app/" class="project-link">Canlı Göster</a>
-            <a href="https://github.com/1337om3r/cs2-market-backend" class="project-link gh">GitHub</a>
+            <a href="https://cs2-market-frontend.vercel.app/" target="_blank" class="project-link">Canlı Göster</a>
+            <a href="https://github.com/1337om3r/cs2-market-backend" target="_blank" class="project-link gh">GitHub</a>
           </div>
         </div>
       </div>
 
+      <!-- 6. NexSearch -->
       <div class="project-card fade-up" data-category="fullstack">
         <div class="project-thumb">
           <div class="project-thumb-pattern"></div>
-          <span class="project-thumb-label"><img src="images/projebanner-nexsearch.png" alt=""></span>
+          <span class="project-thumb-label"><img src="images/projebanner-nexsearch.png" alt="NexSearch Showcase"></span>
         </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="tag">JavaScript</span>
             <span class="tag">Node.js</span>
-            <span class="tag">Express</span>
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
+            <span class="tag">Express Proxy</span>
           </div>
           <h3 class="project-title">NexSearch – Modern Web Proxy Platformu</h3>
           <p class="project-desc">
-            NexSearch, kullanıcıların tarayıcı üzerinden URL girerek web sitelerine proxy aracılığıyla erişmesini sağlayan full-stack bir web uygulamasıdır.
-            Backend tarafında Node.js & Express kullanılarak istek yönlendirme, veri çekme ve loglama sistemi geliştirilmiştir.
-            Frontend tarafında Vanilla JavaScript ile hızlı ve kullanıcı dostu bir arayüz oluşturulmuştur.
-            Uygulama; URL yönlendirme, proxy üzerinden içerik çekme, dinamik sayfa render etme ve gerçek zamanlı erişim özellikleri sunar. Ağ kısıtlamalarını aşmaya yönelik hafif ve pratik bir çözüm sağlar.
+            Kullanıcıların tarayıcı üzerinden URL girerek web sitelerine proxy aracılığıyla erişmesini sağlayan full-stack web uygulaması.
           </p>
           <div class="project-links">
-            <a href="https://nex-search-frontend.vercel.app/" class="project-link">Canlı Göster</a>
-            <a href="https://github.com/1337om3r/nex-search-backend" class="project-link gh">GitHub</a>
+            <a href="https://nex-search-frontend.vercel.app/" target="_blank" class="project-link">Canlı Göster</a>
+            <a href="https://github.com/1337om3r/nex-search-backend" target="_blank" class="project-link gh">GitHub</a>
           </div>
         </div>
       </div>
 
-      <div class="project-card fade-up" data-category="cli">
-        <div class="project-thumb">
-          <div class="project-thumb-pattern"></div>
-          <span class="project-thumb-label"><img src="images/random_psw.png" alt=""></span>
-        </div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="tag">Python</span>
-
-          </div>
-          <h3 class="project-title">Modern Password Generator Platformu</h3>
-          <p class="project-desc">
-            Güvenli, hızlı ve modern bir terminal tabanlı şifre üretim aracı.
-            Bu proje, Python ile geliştirilmiş gelişmiş bir rastgele şifre oluşturucu sistemidir.
-            Kriptografik güvenlik odaklı çalışan yapı sayesinde güçlü ve tahmin edilmesi zor şifreler üretir.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/1337om3r/random-psw" class="project-link">Kaynak Kod</a>
-            <a href="https://github.com/1337om3r/random-psw" class="project-link gh">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card fade-up" data-category="ai">
-        <div class="project-thumb">
-          <div class="project-thumb-pattern"></div>
-          <span class="project-thumb-label"><img src="images/ximage.png" alt=""></span>
-        </div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="tag">Text</span>
-
-          </div>
-          <h3 class="project-title">xAI Imagine (image API playground) Sınırsız Sansürsüz Kullanım Açığı</h3>
-          <p class="project-desc">
-            xAI’nin “Imagine” adlı görsel üretim arayüzünü (image API playground) denedim. Bu ortamda text-to-image modeli üzerinden prompt girerek görsel üretimi yapılabiliyor.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/1337om3r/xai-imagine-notes" class="project-link">Notları Gör</a>
-            <a href="https://github.com/1337om3r/xai-imagine-notes" class="project-link gh">GitHub</a>
-          </div>
-        </div>
-      </div>
-
+      <!-- 7. NexChat -->
       <div class="project-card fade-up" data-category="fullstack">
         <div class="project-thumb">
           <div class="project-thumb-pattern"></div>
-          <span class="project-thumb-label"><img src="images/nexchat.png" alt="NexChat arayüz görseli"></span>
+          <span class="project-thumb-label"><img src="images/nexchat.png" alt="NexChat Showcase"></span>
         </div>
         <div class="project-body">
           <div class="project-tags">
             <span class="tag">Node.js</span>
             <span class="tag">WebSocket</span>
-            <span class="tag">Gerçek Zamanlı</span>
-            <span class="tag">Chat</span>
+            <span class="tag">Socket.io</span>
           </div>
           <h3 class="project-title">NexChat – Gerçek Zamanlı Sohbet Uygulaması</h3>
           <p class="project-desc">
-            NexChat, WebSocket tabanlı gerçek zamanlı mesajlaşma deneyimi sunan sade ve hızlı bir sohbet uygulamasıdır.
-            Kullanıcı listesi, sohbet odaları, modern arayüz ve GIF paylaşımı gibi özelliklerle küçük gruplar ve test ortamları için tasarlanmıştır.
+            WebSocket tabanlı gerçek zamanlı mesajlaşma deneyimi sunan sohbet odaları ve anlık mesajlaşma platformu.
           </p>
           <div class="project-links">
-            <a href="https://nex-chat-4gqo.onrender.com/" class="project-link">Canlı Göster</a>
-            <a href="https://github.com/1337om3r/nex-chat" class="project-link gh">GitHub</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-card fade-up" data-category="cli">
-        <div class="project-thumb">
-          <div class="project-thumb-pattern"></div>
-          <span class="project-thumb-label project-thumb-code">
-            <strong>Bumper</strong>
-            <small>Python CLI</small>
-          </span>
-        </div>
-        <div class="project-body">
-          <div class="project-tags">
-            <span class="tag">Python</span>
-            <span class="tag">CLI</span>
-            <span class="tag">Requests</span>
-            <span class="tag">Araştırma</span>
-          </div>
-          <h3 class="project-title">Bumper – Discord Mesaj Araştırma Aracı</h3>
-          <p class="project-desc">
-            Bumper, Discord mesaj akışlarını ve API davranışlarını incelemek için hazırlanmış Python tabanlı bir komut satırı aracıdır.
-            Proje; yapılandırma okuma, istek gönderme, içerik dosyasından sıralı işlem yürütme ve terminal üzerinden komut yönetimi gibi konulara odaklanır.
-          </p>
-          <div class="project-links">
-            <a href="https://github.com/1337om3r/Bumper" class="project-link gh">GitHub</a>
+            <a href="https://nex-chat-4gqo.onrender.com/" target="_blank" class="project-link">Canlı Göster</a>
+            <a href="https://github.com/1337om3r/nex-chat" target="_blank" class="project-link gh">GitHub</a>
           </div>
         </div>
       </div>
@@ -242,7 +234,6 @@
 
 <script src="main.js"></script>
 <script>
-  // Project category filter
   const filters = document.querySelectorAll('#filters .tag');
   const cards   = document.querySelectorAll('#projects-grid .project-card');
 
@@ -260,4 +251,3 @@
 </script>
 </body>
 </html>
-
